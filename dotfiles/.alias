@@ -1,0 +1,13 @@
+# Directory nav
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias home="cd ~"
+alias ls="ls -a"
+# Dot Files
+alias syncDfA="cp '${CODE_DIR}/env-setup/dotfiles/.alias' '${HOME}/'"
+alias syncDf="cp '${CODE_DIR}/env-setup/dotfiles/.alias' '${HOME}/'"
+# Git
+sckClone(){
+ git clone "git@github.com:sai-c-k/${1}" "${CODE_DIR}"
+}
