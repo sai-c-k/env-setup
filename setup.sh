@@ -2,9 +2,6 @@
 
 set -e
 
-command_exists() {
-	command -v "$@" >/dev/null 2>&1
-}
 
 BASH_PROFILE="${HOME}/.bash_profile"
 DIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
@@ -13,6 +10,8 @@ EMAIL="Sai.C.K.Dev@gmail.com"
 OH_MY_ZSH_DIR="${HOME}/.oh-my-zsh"
 OS="$(uname)"
 USERNAME="Sai-C-K"
+
+source "${DIR}/functions.sh"
 
 if [ "$OS" == "Linux" ]; then
     BREW_HOME="/home/linuxbrew"
