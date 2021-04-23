@@ -24,13 +24,6 @@ if [ ! -d "${POWERLINE_FONT_DIR}" ]; then
   echo "Powerline Fonts installation complete."
 fi
 
-AUTOCOMPLETE_DIR="${ZSH_CUSTOM}/plugins/zsh-autocomplete"
-if [ ! -d "${AUTOCOMPLETE_DIR}" ]; then
-  echo "Installing Auto Complete Plugin..."
-  git clone https://github.com/marlonrichert/zsh-autocomplete "${AUTOCOMPLETE_DIR}"
-  echo "Auto Complete installation complete."
-fi
-
 AUTOSUGGESTION_DIR="${ZSH_CUSTOM}/plugins/zsh-autosuggestions"
 if [ ! -d "${AUTOSUGGESTION_DIR}" ]; then
   echo "Installing Auto Suggestion Plugin..."
@@ -50,7 +43,6 @@ export ZSH_THEME="powerlevel10k/powerlevel10k"
 export plugins=(
   git
   osx
-  zsh-autocomplete
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
