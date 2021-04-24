@@ -3,6 +3,12 @@ export CODE_DIR="${HOME}/code"
 
 mkdir -p "${CODE_DIR}"
 
+if [[ "${OS}" == "Linux" ]]; then
+    # Brew config start
+    eval $(${BREW_HOME}/.linuxbrew/bin/brew shellenv)
+    # Brew config end
+fi
+
 # ZSH
 export ZSH="${HOME}/.oh-my-zsh"
 export ZSH_CUSTOM="${ZSH}/custom"
@@ -63,3 +69,4 @@ if [ -f "${ALIAS}" ]; then
   # shellcheck source=.alias
   source "${ALIAS}"
 fi
+
