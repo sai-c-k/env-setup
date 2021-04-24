@@ -15,9 +15,8 @@
 - Git installed.
 
 ### Windows 10 WSL Additional Instructions.
-
 1. [Install Ubuntu on Windows 10](https://ubuntu.com/tutorials/ubuntu-on-windows)
-2. [Install GCC](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/)
+2. [Install GCC on Ubuntu 20.04](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/)
 
 ### Run
 1. [Github SSH-Key Setup](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
