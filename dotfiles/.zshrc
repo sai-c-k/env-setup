@@ -5,7 +5,7 @@ mkdir -p "${CODE_DIR}"
 
 if [[ "${OS}" == "Linux" ]]; then
     # Brew config start
-    eval $(${BREW_HOME}/.linuxbrew/bin/brew shellenv)
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     # Brew config end
 fi
 
