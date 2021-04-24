@@ -1,10 +1,10 @@
 # Directory nav
-alias ..="cd ../"
-alias ...="cd ../../"
-alias ....="cd ../../../"
 alias home="cd ~"
 alias ls="ls -a"
+# Bash/Zsh Source
+alias zshf5="source ~/.zshrc"
+alias bashpf5="source ~/.bash_profile"
 # Git
-sckClone(){
+gclsck(){
  git clone "git@github.com:sai-c-k/${1}" "${CODE_DIR}/${1}"
 }

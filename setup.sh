@@ -44,13 +44,16 @@ fi
 
 if [ ! -d "${OH_MY_ZSH_DIR}" ]; then
   echo "Installing Oh My Zsh..."
+  export RUNZSH="no"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-  ln -sf "${DOT_FILES_DIR}/.aliases" "${HOME}"
+  ln -sf "${DOT_FILES_DIR}/.alias" "${HOME}"
   ln -sf "${DOT_FILES_DIR}/.zshrc" "${HOME}"
+  echo "Setup user's default shell to zsh."
+  chsh -s "$(which zsh)"
   echo "Oh My Zsh installation complete."
 fi
 
-if  [ ! -d "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+if [ ! -d "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
   echo "Installing Powerlevel10k..."
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k"
   ln -sf "${DOT_FILES_DIR}/.p10k.zsh" "${HOME}"
