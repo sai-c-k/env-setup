@@ -20,6 +20,6 @@
 
 ### Run
 1. [Github SSH-Key Setup](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
-2. `git clone https://github.com/sai-c-k/env-setup ~/code/env-setup`
+2. `git clone git@github.com:sai-c-k/env-setup.git ~/code/env-setup`
 3. In bash, run `~/code/env-setup/setup.sh`
 4. Ensure to follow [Powerlevel10k font installation](https://github.com/romkatv/powerlevel10k#manual-font-installation) for terminal and IntelliJ
