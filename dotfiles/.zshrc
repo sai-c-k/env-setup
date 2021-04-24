@@ -3,6 +3,8 @@ export CODE_DIR="${HOME}/code"
 
 mkdir -p "${CODE_DIR}"
 
+source <(curl -fsSL https://raw.githubusercontent.com/sai-c-k/env-setup/main/functions.sh)
+
 # Brew
 if [[ "${OS}" == "Linux" ]]; then
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
@@ -47,6 +49,7 @@ fi
 export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export plugins=(
+  dotenv
   git
   osx
   zsh-autosuggestions
@@ -65,5 +68,9 @@ ALIAS="${HOME}/.alias"
 if [ -f "${ALIAS}" ]; then
   # shellcheck source=.alias
   source "${ALIAS}"
+fi
+
+if command_exists rbenv; then
+  eval "$(rbenv init -)"
 fi
 
