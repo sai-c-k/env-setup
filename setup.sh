@@ -8,13 +8,20 @@ DOT_FILES_DIR="${DIR}/dotfiles"
 EMAIL="Sai.C.K.Dev@gmail.com"
 OH_MY_ZSH_DIR="${HOME}/.oh-my-zsh"
 OS="$(uname)"
-USERNAME="Sai-C-K"
+USERNAME="sai-c-k"
 
 source "${DIR}/functions.sh"
 
-if [ "${OS}" == "Linux" ]; then
-    BREW_HOME="/home/linuxbrew"
+if [ -z "$(git config user.email)" ]; then
+  echo "Setting git user.email config."
+  git config --global user.email "${EMAIL}"
 fi
+
+if [ -z "$(git config user.name)" ]; then
+  echo "Setting git user.name config."
+  git config --global user.name "${USERNAME}"
+fi
+
 echo "Starting Environment Setup..."
 
 if  ! command_exists brew; then
@@ -23,7 +30,7 @@ if  ! command_exists brew; then
   echo "Homebrew installation complete."
   {
     echo "# Brew config start"
-    echo "eval \$(${BREW_HOME}/.linuxbrew/bin/brew shellenv)"
+    echo "eval \$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
     echo "# Brew config end"
   } >> "${BASH_PROFILE}"
   # shellcheck disable=SC1090
