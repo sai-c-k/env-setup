@@ -3,11 +3,11 @@ export CODE_DIR="${HOME}/code"
 
 mkdir -p "${CODE_DIR}"
 
+# Brew
 if [[ "${OS}" == "Linux" ]]; then
-    # Brew config start
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-    # Brew config end
 fi
+# Brew End
 
 # ZSH
 export ZSH="${HOME}/.oh-my-zsh"
@@ -59,9 +59,6 @@ source "${ZSH}/oh-my-zsh.sh"
 [[ ! -f "${HOME}/.p10k.zsh" ]] || source "${HOME}/.p10k.zsh"
 
 # ZSH End
-
-# Brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Custom aliases
 ALIAS="${HOME}/.alias"
