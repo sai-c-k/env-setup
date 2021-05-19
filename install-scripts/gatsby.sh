@@ -10,7 +10,7 @@ if ! command_exists npm; then
 fi
 
 if ! command_exists gatsby; then
-  echo "Installing node..."
+  echo "Installing Gatsby..."
   npm install --global gatsby-cli
-  echo "Installation Complete: node"
+  echo "Installation Complete: Gatsby"
 fi
