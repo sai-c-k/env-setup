@@ -12,7 +12,7 @@
 ### Prerequisite
 
 - Bash shell available on OS.
-- Git installed.
+- [Git](https://git-scm.com/) installed.
 
 ### Windows 10 WSL Additional Instructions.
 1. [Install Ubuntu on Windows 10](https://ubuntu.com/tutorials/ubuntu-on-windows)

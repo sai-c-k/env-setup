@@ -1,5 +1,6 @@
 export OS="$(uname)"
 export CODE_DIR="${HOME}/code"
+export TMP_DIR="${HOME}/.tmp"
 
 mkdir -p "${CODE_DIR}"
 
