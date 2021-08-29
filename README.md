@@ -1,8 +1,8 @@
 # Environment Setup
 
 ## Goal
-- Ideally, create a uniform dev env on all OSs.
-- Fast setup of a new OS for dev.
+- Ideally, create a uniform developer environment on all OSs.
+- Fast setup of a new OS for development.
 - Personalized dev env:
     - [Z shell](http://zsh.sourceforge.net/) + [oh-my-zsh](https://ohmyz.sh/) with theme [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
     - Custom aliases + functions
