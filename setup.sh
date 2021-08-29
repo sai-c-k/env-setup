@@ -67,6 +67,6 @@ if [ ! -d "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
   echo "Powerlevel10k installation complete."
 fi
 
-mkdir -p "${HOME}/.tmp"
+mkdir  -p "${HOME}/.tmp"
 
 echo "Environment Setup Completed."
