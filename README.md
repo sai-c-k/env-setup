@@ -13,7 +13,7 @@
 
 - Bash shell available on OS.
 - [Git](https://git-scm.com/) installed.
-- [Windows 10 Only] [Install GCC on Ubuntu 20.04](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/)
+- [Windows 10 Only] [Install Ubuntu on Windows 10](https://ubuntu.com/tutorials/ubuntu-on-windows)
 
 ### Run
 1. [Github SSH-Key Setup](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
